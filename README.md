@@ -10,7 +10,7 @@ Roblox Game
     ▼
 FastAPI Backend
     │
-    ├── Player Memory
+    ├── Per-player conversation memory
     ├── Conversation Context
     ├── Database
     │
@@ -58,7 +58,7 @@ Không cần sửa source code khi muốn đổi model.
 
 ---
 
-🧠 Player Memory
+🧠 Per-player conversation memory
 
 Mỗi player có memory riêng.
 
