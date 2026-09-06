@@ -17,7 +17,7 @@ services:
       - key: OPENAI_BASE_URL
         value: "https://api.openai.com/v1"
       - key: OPENAI_MODEL
-        value: "gpt-4o-mini"
+        value: "gpt-5.6-luna"
       - key: OPENAI_SYSTEM_PROMPT
         value: "Bạn là một trợ lý AI thân thiện trong game Roblox. Trả lời ngắn gọn, rõ ràng và vui vẻ."
       - key: OPENAI_API_KEY
