@@ -14,7 +14,7 @@ class Settings(BaseSettings):
     # OpenAI Configuration
     OPENAI_API_KEY: str = ""
     OPENAI_BASE_URL: str = "https://api.openai.com/v1"
-    OPENAI_MODEL: str = "gpt-4o-mini"
+    OPENAI_MODEL: str = "gpt-5.6-luna"
     OPENAI_SYSTEM_PROMPT: str = (
         "Bạn là một trợ lý AI thân thiện trong game Roblox. "
         "Trả lời ngắn gọn, rõ ràng và vui vẻ."
