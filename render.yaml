@@ -1,0 +1,26 @@
+services:
+  - type: web
+    name: roblox-ai-backend
+    runtime: python
+    plan: free
+    region: oregon
+    buildCommand: pip install -r requirements.txt
+    startCommand: PYTHONPATH=. uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /health
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.12.0"
+      - key: APP_NAME
+        value: "Roblox AI Backend"
+      - key: DEBUG
+        value: "False"
+      - key: OPENAI_BASE_URL
+        value: "https://api.openai.com/v1"
+      - key: OPENAI_MODEL
+        value: "gpt-4o-mini"
+      - key: OPENAI_SYSTEM_PROMPT
+        value: "Bạn là một trợ lý AI thân thiện trong game Roblox. Trả lời ngắn gọn, rõ ràng và vui vẻ."
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: SECRET_KEY
+        generateValue: true
